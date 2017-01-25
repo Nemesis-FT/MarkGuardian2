@@ -33,7 +33,6 @@ with requests.session() as c:
             server.login(sys.argv[3], sys.argv[4])
             msg = "Ciao! Sembra che ci sia un nuovo voto sul sito!"
             server.sendmail(sys.argv[5], sys.argv[6], msg)
-            #server.sendmail("info.lbcorporation@gmail.com", "riccardoruozi@icloud.com", msg)
             server.quit()
         time.sleep(1000)
 print("I messed up.")
