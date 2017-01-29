@@ -18,7 +18,7 @@ with requests.session() as c:
     print("--------------------------------------------------------------------------")
     while True:
         c.post('http://www.fermi.mo.it/~loar/AssenzeVotiStudenti/elabora_PasswordStudenti.php', data=payload)
-        response = c.post('http://www.fermi.mo.it/~loar/AssenzeVotiStudenti/VotiStudente1Q.php')
+        response = c.post('http://www.fermi.mo.it/~loar/AssenzeVotiStudenti/VotiStudente2Q.php')
         actual = len(response.content)
         if actual == prev or first == 1:
             print("Pagina non modificata")
